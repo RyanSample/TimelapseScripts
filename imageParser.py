@@ -1,6 +1,9 @@
 from PIL import Image
 import os,sys
-
+def createNewDirectory(directoryPath):
+    if not os.path.exists(directoryPath):
+        os.makedirs(directoryPath)
+    
 def imageParser(pathName):
     directory = os.listdir(pathName)
     print(directory) 
